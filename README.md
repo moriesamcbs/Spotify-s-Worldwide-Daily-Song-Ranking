@@ -6,7 +6,7 @@
 ___
 
 
-3#### *Acknowledgment:* This task is inspired by a project done by *http://eduar.do* shared on Kaggle with the context of exploring how artists and song’s popularity varies overtime *here*. This work is an extension of the same by analyzing daily ranking of the 200 most listened songs by Spotify users in 10 countries that contribute most to Spotify’s bottom line *here*.
+3#### *Acknowledgment:* This task is inspired by a project done by *http://eduar.do* shared on Kaggle with the context of exploring how artists and song’s popularity varies overtime *here*[https://www.kaggle.com/edumucelli/spotifys-worldwide-daily-song-ranking]. This work is an extension of the same by analyzing daily ranking of the 200 most listened songs by Spotify users in 10 countries that contribute most to Spotify’s bottom line *here*[https://www.hypebot.com/hypebot/2018/02/which-countrys-contribute-most-to-spotifys-bottom-line-chart.html].
 
 
 
@@ -43,7 +43,7 @@ ___
 
 For easier analysis and collaboration, I have built a dashboard to visualize and track Spotify music trends. For a more in-depth insights, download and interact with this sample dashboard on *Tableau Public.* <br>
 
-<img src="./plots/Tableau_consolidated">
+[Tableau](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/Tableau_consolidated.png)
 
 
 
@@ -54,7 +54,7 @@ ___
 
 Initially, I have computed Linear Regression and used Multi-output regression predict multiple output/target variables. I took artist and streams to forecast average/max/min rank variables simultaneously. As tuning /fitting process, after standardizing(scaling) data I used PCA to find linear combinations of current predictor variables and created new "principal components". This process helped to reduce dimensionality and understand the most important "directions" in the data.  However, after plotting the Linear Regression of actual vs prediction residual I realized that the outcome did not change in proportion to a change in any of the inputs, in other words, the plot indicated nonlinearity:<br>
 
-<img src="./plots/residual_overall_lr" width="100%" height="80%">
+[residual_lr](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/residual_overall_lr.png)
 
 <br>
 
@@ -69,8 +69,7 @@ The test R2 Score on the Rank Position data a is: 91.9% <br>
 The train RMSE on the Rank Position data is:  15<br>
 
 
-<img src="./plots/residual_overall_rf" width="100%" height="80%">
-
+[residual_rf](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/residual_overall_rf.png)
 
 <br>
 
@@ -78,7 +77,7 @@ The train RMSE on the Rank Position data is:  15<br>
 
 Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used as directional insights:
 
-<img src="./plots/rank_resist.png" width="100%" height="80%">
+<img src="./plots/rank_resist.png" width="50%" height="30%">
 
 
 <br>
