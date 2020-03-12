@@ -99,7 +99,7 @@ Next steps identified to expand on this project are as follows:<br>
 ### Sources & Requirements
 ___
 
-• [Spotify | Charts:](https://spotifycharts.com/regional)<br>
+• [Spotify | Charts](https://spotifycharts.com/regional)<br>
 • Scikitlearn==0.21<br>
 • Spotipy== fycharts.SpotifyCharts Tweet<br>
 • Pandas==1.0.
