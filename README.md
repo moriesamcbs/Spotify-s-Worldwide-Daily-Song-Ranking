@@ -75,7 +75,7 @@ The train RMSE on the Rank Position data is:  15<br>
 
 **<code>Rank Resistance</code>**
 
-Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used as directional insights:
+Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used for some directional insights:
 
 <img src="./plots/rank_resist.png" width="40%" height="25%">
 
