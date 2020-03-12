@@ -17,9 +17,9 @@ ___
 
 #### Data
 
-Dataset contains the daily ranking of the 200 most listened songs in USA, UK, Mexico, Germany, Brazil, Canada, Australia, Netherlands, France and Sweden. It contains 730,000 rows, which comprises 2574 artists, 8825 songs for a total count of eighty-eight billion streams count.
+Dataset contains the daily ranking of the 200 most listened songs in **USA**, **UK**, **Mexico**, **Germany**, **Brazil**, **Canada**, **Australia**, **Netherlands**, **France** and **Sweden**. It contains 730,000 rows, which comprises 2574 artists, 8825 songs for a total count of eighty-eight billion streams count.
 The data spans from 1st January 2019 to 31st December 2019 and includes 7 columns.
-It has been collected from Spotify's regional chart data.
+It has been collected from Spotify's regional chart [data.](https://spotifycharts.com/regional)
 
 
 ### Objective and MVP
