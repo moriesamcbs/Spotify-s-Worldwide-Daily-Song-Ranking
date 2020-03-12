@@ -13,7 +13,7 @@ ___
 ### Introduction
 ___
 
-*Spotify* transformed music listening forever when it launched in Sweden in 2008 and became one of the most popular global audio streaming subscription service with 271m users, including 124m subscribers, across 79 markets. All throughout the last year, users have streamed countless hours of their favorite songs, artists, playlists, and podcasts. In this analysis, using Spotify’s chart of 2019 I will highlight the common trends and use a timeseries model to forecast the number of tracks stream and its associated popularity.
+*Spotify* transformed music listening forever when it launched in Sweden in 2008 and became one of the most popular global audio streaming subscription service with 271m users, including 124m subscribers, across 79 markets. All throughout the last year, users have streamed countless hours of their favorite songs, artists, playlists, and podcasts. In this analysis, using Spotify’s chart of 2019 I will highlight the common trends and use regression models to forecast the number of tracks stream and its associated popularity.
 
 #### Data
 
