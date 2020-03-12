@@ -32,7 +32,10 @@ Data is scrapped by downloading the CSV file using Spotify top 200 daily API and
 ### Data Scrapping, Cleaning & Feature Engineering
 ___
 
-Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  I later created PostgreSQL Database using Heroku to create a SQL table database and then stored the queried table as a new data frame. Missing data have been removed from the table as they were insignificant and region codes are all replaced with the country’s name. categorical variables are encoded as part of the data processing.
+
+**<code>Scrapping:</code>** Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  **<code>Cleaning:</code>**  Missing data have been removed from the table as they were insignificant and region codes are all replaced with the country’s name. Miscategorized datatypes are also converted to the right format, for example the ‘date’ column has been converted from an object to datetime and set as index, and rank position changed from continuous to a discrete. Also, categorical variables are encoded as part of the data processing.<br> 
+**<code>Feature Engineering :</code>** To run the models faster I created separate data frame for each country and used USA table as a pilot and then tested the model for each country individually. Since the rank position for an artist could vary depending on song’s popularity, number of streams and the region, I have created new variables for average rank, top rank, low rank based on average, maximum and minimum streams. The new features drastically improved the model’s R2 score. 
+
 
 
 ### Data Analysis
@@ -47,13 +50,36 @@ For easier analysis and collaboration, I have built a dashboard to visualize and
 ### Modeling
 ___
 
-I will compute VAR time series model and take rank and streams to forecast these variables simultaneously. As fitting process, I will confirm stationary of the data using augmented Dickey-Fuller Test. After splitting data into train/test sets, I will determine correct lag order and after fitting the model I use AIC to select the value of p and generate forecasts.
+**<code>Rank Position</code>**
 
-Summary of Regression Results
+Initially, I have computed Linear Regression and used Multi-output regression predict multiple output/target variables. I took artist and streams to forecast average/max/min rank variables simultaneously. As tuning /fitting process, after standardizing(scaling) data I used PCA to find linear combinations of current predictor variables and created new "principal components". This process helped to reduce dimensionality and understand the most important "directions" in the data.  However, after plotting the Linear Regression of actual vs prediction residual I realized that the outcome did not change in proportion to a change in any of the inputs, in other words, the plot indicated nonlinearity:<br>
 
-The test MSE on the Rank Position data is:
-The test MSE on the Streams data is:
+![residual_lr](http://localhost:8888/view/plots/residual_overall_lr.png)
 
+
+And therefore, I computed the Random Forest Regressor that uses  averaging of classifying decision trees on sub-samples of the dataset to improve the predictive accuracy and control over-fitting. The result looks promising:
+  
+Summary of Regression Results:
+
+The train R2 Score on the Rank Position data is:  98.6% <br>
+The train RMSE on the Rank Position data is:  6<br>
+<br>
+The test R2 Score on the Rank Position data a is: 91.9% <br>
+The train RMSE on the Rank Position data is:  15<br>
+
+
+![residual_rf](http://localhost:8888/view/plots/residual_overall_rf.png)
+
+
+<br>
+
+**<code>Rank Resistance</code>**
+
+Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used as directional insights:
+
+![Rank_resist](http://localhost:8888/view/plots/Screen%20Shot%202020-03-12%20at%2011.48.02%20AM.png)
+
+<br>
 
 
 ### Conclusion and Next Steps
