@@ -6,7 +6,7 @@
 ___
 
 
- <code>**Acknowledgment:</code>** This task is inspired by a project done by *http://eduar.do* shared on Kaggle with the context of exploring how artists and song’s popularity varies overtime [*here*](https://www.kaggle.com/edumucelli/spotifys-worldwide-daily-song-ranking). This work is an extension of the same by analyzing daily ranking of the 200 most listened songs by Spotify users in 10 countries that contribute most to Spotify’s bottom line [*here*](https://www.hypebot.com/hypebot/2018/02/which-countrys-contribute-most-to-spotifys-bottom-line-chart.html).
+ ***<code>Acknowledgment:</code>*** This task is inspired by a project done by *http://eduar.do* shared on Kaggle with the context of exploring how artists and song’s popularity varies overtime [*here*](https://www.kaggle.com/edumucelli/spotifys-worldwide-daily-song-ranking). This work is an extension of the same by analyzing daily ranking of the 200 most listened songs by Spotify users in 10 countries that contribute most to Spotify’s bottom line [*here*](https://www.hypebot.com/hypebot/2018/02/which-countrys-contribute-most-to-spotifys-bottom-line-chart.html).
 
 
 
