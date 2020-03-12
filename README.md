@@ -77,7 +77,7 @@ The train RMSE on the Rank Position data is:  15<br>
 
 Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used as directional insights:
 
-<img src="./plots/rank_resist.png" width="20%" height="15%">
+<img src="./plots/rank_resist.png" width="40%" height="25%">
 
 
 <br>
@@ -99,7 +99,7 @@ Next steps identified to expand on this project are as follows:<br>
 ### Sources & Requirements
 ___
 
-• [Spotify | Charts:] (https://spotifycharts.com/regional)<br>
+• ![Spotify | Charts:] (https://spotifycharts.com/regional)<br>
 • Scikitlearn==0.21<br>
 • Spotipy== fycharts.SpotifyCharts Tweet<br>
 • Pandas==1.0.
