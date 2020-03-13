@@ -25,7 +25,9 @@ It has been collected from Spotify's regional chart [data.](https://spotifychart
 ### Objective and MVP
 ___
 
-Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  I later created PostgreSQL Database using Heroku to create a SQL table database and then stored the queried table as a new data frame. Missing data have been removed from the table as they were insignificant and region codes are all replaced with the country’s name. categorical variables are encoded as part of the data processing.
+Using the information given in the database I predicted the rank position or the number of streams a song will have in the future and expanded the analysis to learn factors such as:<br>
+- Duration songs “resist” on the top 3, 5, 10, 20 ranking.                                                                      - What are the signs of a song that gets into the top rank to stay                                                              - Do countries share same top-ranking artists or songs                                                                         - Are people listening to the very same top-ranking songs on countries far away from each other? 
+
 
 
 
