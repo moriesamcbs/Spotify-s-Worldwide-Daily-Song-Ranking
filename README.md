@@ -46,7 +46,7 @@ ___
 ### Data Analysis
 ___
 
-For easier analysis and collaboration, I have built a dashboard to visualize and track Spotify music trends. For a more in-depth insights, download and interact with this *[sample dashboard]* on *Tableau Public.* <br>
+For easier analysis and collaboration, I have built a dashboard to visualize and track Spotify music trends. For a more in-depth insights, download and interact with this [*sample dashboard*] on *Tableau Public.* <br>
 
 ![Tableau](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/Tableau_consolidated.png)
 
