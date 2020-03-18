@@ -13,11 +13,11 @@ ___
 ### Introduction
 ___
 
-*Spotify* transformed music listening forever when it launched in Sweden in 2008 and became one of the most popular global audio streaming subscription service with 271m users, including 124m subscribers, across 79 markets. All throughout the last year, users have streamed countless hours of their favorite songs, artists, playlists, and podcasts. In this analysis, using Spotify’s chart of 2019 I will highlight the common trends and use regression models to forecast the number of tracks stream and its associated popularity.
+*Spotify* transformed music listening forever when it launched in Sweden in 2008 and became one of the most popular global audio streaming subscription service with 271m users, including 124m subscribers, across 79 markets. All throughout the last year, users have streamed countless hours of their favorite songs, artists, playlists, and podcasts. In this analysis, using Spotify’s chart of 2019 I will highlight the common trends and use regression models to forecast the number of tracks streamed and their associated popularity.
 
 #### Data
 
-Dataset contains the daily ranking of the 200 most listened songs in **USA**, **UK**, **Mexico**, **Germany**, **Brazil**, **Canada**, **Australia**, **Netherlands**, **France** and **Sweden**. It contains 730,000 rows, which comprises 2574 artists, 8825 songs for a total count of eighty-eight billion streams count.
+Dataset contains the daily ranking of the 200 most listened songs in **USA**, **UK**, **Mexico**, **Germany**, **Brazil**, **Canada**, **Australia**, **Netherlands**, **France** and **Sweden**. It contains 730,000 rows, which comprise 2574 artists, 8825 songs for a total count of eighty-eight billion stream counts.
 The data spans from 1st January 2019 to 31st December 2019 and includes 7 columns.
 It has been collected from Spotify's regional chart [data.](https://spotifycharts.com/regional)
 
@@ -25,11 +25,11 @@ It has been collected from Spotify's regional chart [data.](https://spotifychart
 ### Objective and MVP
 ___
 
-I used the information given in the database to predict the rank position or the number of streams a song will have in the future and expanded the analysis to learn factors such as:<br>
+Using the information given in the database I predicted the rank position or the number of streams a song will have in the future and expanded the analysis to learn factors such as:<br>
 - Duration songs “resist” on the top 3, 5, 10, 20 ranking.                                                                   
 - What are the signs of a song that gets into the top rank to stay<br>                                                       
 - Do countries share same top-ranking artists or songs<br>                                                                   
-- Are people listening to the very same top-ranking songs on countries far away from each other? 
+- Are people listening to the very same top-ranking songs in countries far away from each other? 
 
 
 
@@ -38,7 +38,7 @@ I used the information given in the database to predict the rank position or the
 ___
 
 
-**<code>Scrapping:</code>** Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  **<code>Cleaning:</code>**  Missing data have been removed from the table as they were insignificant and region codes are all replaced with the country’s name. Miscategorized datatypes are also converted to the right format, for example the ‘date’ column has been converted from an object to datetime and set as index, and rank position changed from continuous to a discrete. Also, categorical variables are encoded as part of the data processing.<br> 
+**<code>Scrapping:</code>** Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  **<code>Cleaning:</code>**  Missing data has been removed from the table as it was insignificant and region codes are all replaced with the country’s name. Miscategorized datatypes are also converted to the right format, for example the ‘date’ column has been converted from an object to datetime and set as index, and rank position changed from continuous to a discrete. Also, categorical variables are encoded as part of the data processing.<br> 
 **<code>Feature Engineering :</code>** To run the models faster I created separate data frame for each country and used USA table as a pilot and then tested the model for each country individually. Since the rank position for an artist could vary depending on song’s popularity, number of streams and the region, I have created new variables for average rank, top rank, low rank based on average, maximum and minimum streams. The new features drastically improved the model’s R2 score. 
 
 
@@ -78,9 +78,9 @@ The train RMSE on the Rank Position data is:  15<br>
 
 <br>
 
-**<code>Rank Resistance</code>**
+**<code>Predicting Rank Resistance</code>**
 
-Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on it's current rank, however EDA can still be used for some directional insights:
+Results indicated that choosing only one attribute (# of Streams ) is not suffcient to predict the duration of a song remaining on its current rank, however EDA can still be used for some directional insights:
 
 <img src="./plots/rank_resist.png" width="40%" height="25%">
 
@@ -91,7 +91,7 @@ Results indicated that choosing only one attribute (# of Streams ) is not suffci
 ### Conclusion and Next Steps
 ___
 
-In general, the popularity rating is based on total number of streams compared to other tracks as well as how recent those streams are, however that alone does not factor in determining the songs success. As shown in the data, countries share the same top-ranking songs, and that shows how factors like social trend, location, artist and genre are significant to track’s popularity. Nonetheless, exploring songs features could provide further insights for artists and music agents who are looking for Spotify users view and their perceived values.
+In general, the popularity rating is based on total number of streams compared to other tracks as well as how recent those streams are, however that alone does not factor in determining the songs success. As shown in the data, countries share the same top-ranking songs, and that shows how factors like social trends, location, artists and genre are significant to track’s popularity. Nonetheless, exploring songs features could provide further insights for artists and music agents who are looking for Spotify users view and their perceived values.
 
 Next steps identified to expand on this project are as follows:<br>
 -Real Time KPI Dashboard:  connecting to Spotify data and get the latest data from Spotify’s charts and bring it into Tableau for analysis.<br>
