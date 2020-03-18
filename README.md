@@ -57,7 +57,7 @@ ___
 
 **<code>Rank Position</code>**
 
-Initially, I have computed Linear Regression and used Multi-output regression predict multiple output/target variables. I took artist and streams to forecast average/max/min rank variables simultaneously. As tuning /fitting process, after standardizing(scaling) data I used PCA to find linear combinations of current predictor variables and created new "principal components". This process helped to reduce dimensionality and understand the most important "directions" in the data.  However, after plotting the Linear Regression of actual vs prediction residual I realized that the outcome did not change in proportion to a change in any of the inputs, in other words, the plot indicated nonlinearity:<br>
+Initially, I have computed Linear Regression and used Multi-output regression to predict multiple output/target variables. I took artist and streams to forecast average/max/min rank variables simultaneously. As tuning /fitting process, after standardizing(scaling) data I used PCA to find linear combinations of current predictor variables and created new "principal components". This process helped to reduce dimensionality and understand the most important "directions" in the data.  However, after plotting the Linear Regression of actual vs prediction residual I realized that the outcome did not change in proportion to a change in any of the inputs, in other words, the plot indicated nonlinearity:<br>
 
 ![residual_lr](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/residual_overall_lr.png)
 
