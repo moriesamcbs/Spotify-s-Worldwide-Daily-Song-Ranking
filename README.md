@@ -94,7 +94,7 @@ ___
 In general, the popularity rating is based on total number of streams compared to other tracks as well as how recent those streams are, however that alone does not factor in determining the songs success. As shown in the data, countries share the same top-ranking songs, and that shows how factors like social trends, location, artists and genre are significant to track’s popularity. Nonetheless, exploring songs features could provide further insights for artists and music agents who are looking for Spotify users view and their perceived values.
 
 Next steps identified to expand on this project are as follows:<br>
--Real Time KPI Dashboard:  connecting to Spotify data and get the latest data from Spotify’s charts and bring it into Tableau for analysis.<br>
+- Real Time KPI Dashboard:  connecting to Spotify data and get the latest data from Spotify’s charts and bring it into Tableau for analysis.<br>
 - Extend the data set to include all countries where Spotify is available and add podcast as a separate category.<br>
 - Further analysis to learn engagement by streaming device e.g. phone, computer or tablet.<br>
 - Explore impact of attributes such as song genre, keys, energy, danceability, instrumentals, etc. on its popularity and create a regression model to predict song’s popularity based on these features.
