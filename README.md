@@ -63,7 +63,7 @@ Initially, I have computed Linear Regression and used Multi-output regression to
 
 <br>
 
-And therefore, I computed the Random Forest Regressor that uses  averaging of classifying decision trees on sub-samples of the dataset to improve the predictive accuracy and control over-fitting. The result looks promising:
+And therefore, I computed the Random Forest Regressor that uses  averaging of classifying decision trees on sub-samples of the dataset to improve the predictive accuracy and control over-fitting. The result looked promising:
   
 Summary of Regression Results:
 
