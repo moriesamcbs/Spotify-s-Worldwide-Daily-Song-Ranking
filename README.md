@@ -71,7 +71,7 @@ The train R2 Score on the Rank Position data is:  98.6% <br>
 The train RMSE on the Rank Position data is:  6<br>
 <br>
 The test R2 Score on the Rank Position data a is: 91.9% <br>
-The train RMSE on the Rank Position data is:  15<br>
+The test RMSE on the Rank Position data is:  15<br>
 
 
 ![residual_rf](https://github.com/moriesam/Spotify-s-Worldwide-Daily-Song-Ranking/blob/master/plots/residual_overall_rf.png)
