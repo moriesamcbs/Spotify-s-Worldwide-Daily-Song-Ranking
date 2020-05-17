@@ -25,7 +25,7 @@ It has been collected from Spotify's regional chart [data.](https://spotifychart
 ### Objective and MVP
 ___
 
-Using the information given in the database I predicted the rank position or the number of streams a song will have in the future and expanded the analysis to learn factors such as:<br>
+Using the information given in the database I predicted the rank position will have in the future and expanded the analysis to learn factors such as:<br>
 - Duration songs “resist” on the top 3, 5, 10, 20 ranking.                                                                   
 - What are the signs of a song that gets into the top rank to stay<br>                                                       
 - Do countries share same top-ranking artists or songs<br>                                                                   
