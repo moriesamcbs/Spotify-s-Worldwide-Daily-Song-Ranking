@@ -39,7 +39,7 @@ ___
 
 
 **<code>Scrapping:</code>** Data is scrapped by downloading the CSV file using Spotify top 200 daily API and converted to a Pandas data frame.  **<code>Cleaning:</code>**  Missing data has been removed from the table as it was insignificant and region codes are all replaced with the country’s name. Miscategorized datatypes are also converted to the right format, for example the ‘date’ column has been converted from an object to datetime and set as index, and rank position changed from continuous to a discrete. Also, categorical variables are encoded as part of the data processing.<br> 
-**<code>Feature Engineering :</code>** To run the models faster I created separate data frame for each country and used USA table as a pilot and then tested the model for each country individually. Since the rank position for an artist could vary depending on song’s popularity, number of streams and the region, I have created new variables for average rank, top rank, low rank based on average, maximum and minimum streams. The new features drastically improved the model’s R2 score. 
+**<code>Feature Engineering :</code>** To run the models faster I created separate data frame for each country and used USA table as a pilot and then tested the model for each country individually. Since the rank position for an artist could vary depending on song’s popularity, number of streams and the region, I have created new variables for average rank, top rank, low rank based on average, maximum and minimum streams. The new variables drastically improved the model’s R2 score. 
 
 
 
